@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SlideImage">
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:iss_auto_cycle="true"
+        app:iss_delay="0"
+        app:iss_period="3000"
+        />
+    <LinearLayout
+        android:layout_below="@+id/image_slider"
+        android:layout_width="300dp"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:fontFamily="@font/mm"
+            android:background="@drawable/bg_regis"/>
+        <Button
+            android:text="REGISTER"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mm"
+            android:id="@+id/register"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_login"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
